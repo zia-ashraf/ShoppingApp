@@ -1,0 +1,23 @@
+form {
+  padding: 3rem;
+  border: 1px solid black;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 3rem;
+  text-align: center;
+  border: solid 2px #064635;
+  border-radius: 5px;
+  background-color: #f4eea9;
+  color: #064635;
+}
+h1 {
+  margin-bottom: 30px;
+  color: #064635;
+}
+
+input {
+  margin-bottom: 15px;
+  border: solid 1.7px #064635;
+  border-radius: 5px;
+}
