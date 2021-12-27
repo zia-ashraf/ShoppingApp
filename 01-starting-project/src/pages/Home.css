@@ -79,3 +79,8 @@
 .products-heading i {
   font-size: 45px;
 }
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
