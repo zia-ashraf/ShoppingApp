@@ -6,11 +6,11 @@ export default function Login() {
       <h1>Login/SignUp</h1>
       <label for="email">Enter your email</label>
       <br />
-      <input type="email" id="email" name="email" value=""></input>
+      <input type="email" id="email" name="email"></input>
       <br />
       <label for="password">Enter your password</label>
       <br />
-      <input type="password" id="password" name="password" value=""></input>
+      <input type="password" id="password" name="password"></input>
     </form>
   );
 }

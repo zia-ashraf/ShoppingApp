@@ -6,7 +6,6 @@ import Login from "./pages/Login";
 
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
   Link,
   Routes,
