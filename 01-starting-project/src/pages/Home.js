@@ -2,96 +2,9 @@ import React from "react";
 import "./Home.css";
 import descImg from "./../resources/images/desc-img.jpg";
 import headerImg from "./../resources/images/headerImg.jpg";
-import ProductItem from "../components/ProductItem";
 import image from "./../resources/images/productImg/product1.jpg";
-const Home = () => {
-  const productArray = [
-    {
-      id: "product01",
-      name: "coat",
-      availableNumber: 2,
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product02",
-      name: "shirt",
-      availableNumber: 2,
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product03",
-      name: "sweater",
-      availableNumber: 2,
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product04",
-      availableNumber: 2,
-      name: "caps",
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product05",
-      name: "coat",
-      availableNumber: 2,
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product06",
-      name: "shirt",
-      availableNumber: 2,
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product07",
-      name: "sweater",
-      availableNumber: 2,
-
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product08",
-      availableNumber: 2,
-      name: "caps",
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product09",
-      name: "coat",
-      availableNumber: 2,
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product10",
-      name: "shirt",
-      availableNumber: 2,
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product11",
-      availableNumber: 2,
-      name: "sweater",
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-    {
-      id: "product12",
-      availableNumber: 2,
-      name: "caps",
-      isFavourite: false,
-      image: "./../resources/images/productImg/product1.jpg",
-    },
-  ];
+import CategoryCard from "../components/CategoryCard";
+const Home = (props) => {
   return (
     <div>
       <hr />
@@ -152,15 +65,15 @@ const Home = () => {
       </div>
       <hr />
       <div className="products">
-        {productArray.map((product) => {
+        {props.productArray.map((product) => {
           return (
-            <ProductItem
+            <CategoryCard
               name={product.name}
               availableNumber={product.availableNumber}
               id={product.id}
               image={image}
               isFavourite={product.isFavourite}
-            ></ProductItem>
+            ></CategoryCard>
           );
         })}
       </div>

@@ -6,6 +6,7 @@
   margin: 1rem;
   text-decoration: none;
   overflow: hidden;
+  cursor: pointer;
   border-top-left-radius: 17px;
   border-bottom-right-radius: 17px;
   border-top-right-radius: 17px;
@@ -54,4 +55,10 @@
 }
 .oldprice {
   text-decoration: line-through;
+}
+.item-container {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }

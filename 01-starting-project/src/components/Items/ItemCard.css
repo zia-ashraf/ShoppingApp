@@ -1,0 +1,17 @@
+.iitem {
+  height: 250px;
+  width: 250px;
+  border: 1px solid black;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.iitem img {
+  width: 100%;
+  height: 80%;
+}
+
+.iitem-details {
+  display: flex;
+  justify-content: space-evenly;
+}
